@@ -26,12 +26,14 @@ export default defineNuxtConfig({
 
   postcss: {
     plugins: {
+      'tailwindcss/nesting': {},
+      tailwindcss: {},
       autoprefixer: {},
     },
   },
 
   experimental: {
-    inlineSSRStyles: false
+    inlineSSRStyles: true
   },
 
   css: ['@/assets/css/global.css'],
