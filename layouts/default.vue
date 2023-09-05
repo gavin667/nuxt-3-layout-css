@@ -16,7 +16,7 @@
   </div>
 </template>
 <script setup>
-const sidebarStore = useSidebarStore()
+const exampleStore = useExampleStore()
 const showLazyComponent = ref(false)
 
 function toggleLazyComponent() {
