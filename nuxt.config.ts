@@ -9,4 +9,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  experimental: {
+    inlineSSRStyles: true
+  },
 })
