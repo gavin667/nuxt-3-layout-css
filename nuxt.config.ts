@@ -16,6 +16,13 @@ export default defineNuxtConfig({
     vueI18n: "./i18n.config.js"
   },
 
+  imports: {
+    dirs: ['stores'],
+    transform: {
+      exclude: [/@sungodltd\/vision/],
+    },
+  },
+
   postcss: {
     plugins: {
       autoprefixer: {},
