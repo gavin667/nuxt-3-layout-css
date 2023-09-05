@@ -32,6 +32,8 @@ export default defineNuxtConfig({
     },
   },
 
+  components: [{ path: '~/components', pathPrefix: false }],
+
   experimental: {
     inlineSSRStyles: true
   },
@@ -47,6 +49,14 @@ export default defineNuxtConfig({
         strict: false // avoids error when using yarn link locally
       }
     }
+  },
+
+  runtimeConfig: {
+    public: {
+      datoEndpoint: '',
+      datoApiToken: '',
+      datoEnvironment: '',
+    },
   },
 
   app: {

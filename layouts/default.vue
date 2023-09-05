@@ -5,11 +5,12 @@
     <div>
         <slot />
     </div>
-    <footer>This is the footer</footer>
+    <PageFooter/>
   </div>
 </template>
 <script setup>
 const route = useRoute()
 
 console.log(route)
+console.log('This is the default layout')
 </script>
