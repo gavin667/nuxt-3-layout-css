@@ -1,5 +1,5 @@
 <template>
-<div class="support">Page content (should be purple)</div>
+    <div class="support">Page content (should be purple)</div>
 </template>
 <script>
 export default {

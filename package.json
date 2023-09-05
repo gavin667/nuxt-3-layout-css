@@ -13,6 +13,7 @@
     "nuxt": "^3.7.0"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^8.0.0-rc.4"
+    "@nuxtjs/i18n": "^8.0.0-rc.4",
+    "@sungodltd/vision": "^0.2.14"
   }
 }

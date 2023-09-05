@@ -5,6 +5,7 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/i18n',
+    '@sungodltd/vision/nuxt-3/module',
   ],
 
   i18n: {
