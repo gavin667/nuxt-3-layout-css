@@ -14,6 +14,17 @@ export default defineNuxtConfig({
 
   css: ['@/assets/css/global.css'],
 
+  vite: {
+    build: {
+      sourcemap: true
+    },
+    server: {
+      fs: {
+        strict: false // avoids error when using yarn link locally
+      }
+    }
+  },
+
   app: {
     head: {
       title: 'SunGod',
