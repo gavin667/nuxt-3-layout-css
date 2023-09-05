@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   },
 
   pinia: {
-    autoImports: ['defineStore', 'storeToRefs', 'sidebarStore'],
+    autoImports: ['defineStore', 'storeToRefs'],
   },
 
   imports: {
