@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   },
 
   experimental: {
-    inlineSSRStyles: true
+    inlineSSRStyles: false
   },
 
   css: ['@/assets/css/global.css'],
