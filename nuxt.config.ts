@@ -1,6 +1,20 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { locales } from './i18n/constants.js'
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
+  modules: [
+    '@nuxtjs/i18n',
+  ],
+
+  i18n: {
+    strategy: 'prefix',
+    defaultLocale: 'en-gb',
+    lazy: true,
+    langDir: 'i18n/lang',
+    locales,
+    vueI18n: "./i18n.config.js"
+  },
 
   postcss: {
     plugins: {
