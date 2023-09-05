@@ -11,4 +11,6 @@ export default defineNuxtConfig({
   experimental: {
     inlineSSRStyles: true
   },
+
+  css: ['@/assets/css/global.css'],
 })
