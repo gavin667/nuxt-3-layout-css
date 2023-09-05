@@ -8,7 +8,7 @@
       Show lazy component
     </button>
 
-    <LazyTestComponent v-if="showLazyComponent"/>
+    <TestComponent v-if="showLazyComponent"/>
 
     <div>
         <slot />
