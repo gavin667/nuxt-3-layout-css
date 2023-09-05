@@ -16,10 +16,10 @@
   </div>
 </template>
 <script setup>
+const sidebarStore = useSidebarStore()
 const showLazyComponent = ref(false)
 
 function toggleLazyComponent() {
-  console.log('Hello4')
   showLazyComponent.value = !showLazyComponent.value
 }
 </script>
