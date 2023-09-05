@@ -11,15 +11,10 @@ export default defineNuxtConfig({
 
   imports: {
     dirs: ['stores'],
-    transform: {
-      exclude: [/@sungodltd\/vision/],
-    },
   },
 
   postcss: {
     plugins: {
-      'tailwindcss/nesting': {},
-      tailwindcss: {},
       autoprefixer: {},
     },
   },
