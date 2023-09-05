@@ -1,16 +1,25 @@
 <template>
   <div>
-    <TestComponent />
-    <div>Another things here</div>
+    <div>This is text directly on the layout.</div>
+
+    <AnotherComponent/>
+
+    <button @click="toggleLazyComponent">
+      Show lazy component
+    </button>
+
+    <LazyTestComponent v-if="showLazyComponent"/>
+
     <div>
         <slot />
     </div>
-    <PageFooter/>
   </div>
 </template>
 <script setup>
-const route = useRoute()
+const showLazyComponent = ref(false)
 
-console.log(route)
-console.log('This is the default layout')
+function toggleLazyComponent() {
+  console.log('Hello4')
+  showLazyComponent.value = !showLazyComponent.value
+}
 </script>

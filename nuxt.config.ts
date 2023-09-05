@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     '@sungodltd/vision/nuxt-3/module',
+    '@pinia/nuxt',
   ],
 
   i18n: {
@@ -15,6 +16,10 @@ export default defineNuxtConfig({
     langDir: 'i18n/lang',
     locales,
     vueI18n: "./i18n.config.js"
+  },
+
+  pinia: {
+    autoImports: ['defineStore', 'storeToRefs', 'sidebarStore'],
   },
 
   imports: {
@@ -51,17 +56,9 @@ export default defineNuxtConfig({
     }
   },
 
-  runtimeConfig: {
-    public: {
-      datoEndpoint: '',
-      datoApiToken: '',
-      datoEnvironment: '',
-    },
-  },
-
   app: {
     head: {
-      title: 'SunGod',
+      title: 'Nuxt Layout CSS',
       htmlAttrs: { lang: 'en' },
       meta: [
         { charset: 'utf-8' },
