@@ -4,12 +4,6 @@
   </div>
 </template>
 
-<script setup>
-const exampleStore = useExampleStore()
-
-console.log('This is the example store', exampleStore)
-</script>
-
 <style lang="postcss">
 .test-component {
   color: red;
