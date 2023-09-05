@@ -13,9 +13,6 @@
     "nuxt": "^3.7.0"
   },
   "dependencies": {
-    "@nuxtjs/i18n": "^8.0.0-rc.4",
-    "@pinia/nuxt": "^0.4.11",
-    "change-case": "^4.1.2",
-    "datocms-listen": "^0.1.15"
+    "@pinia/nuxt": "^0.4.11"
   }
 }
